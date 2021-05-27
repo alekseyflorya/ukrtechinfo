@@ -83,7 +83,6 @@ const App = () => {
     ...state,
     toggleTheme: () => setIsThemeDark(prev => !prev),
     setFocusedScreen: screen => {
-      console.log('setFocusedScreen screen', screen);
       dispatch({type: 'SET_FOCUSED', payload: screen});
     },
   };
